@@ -46,7 +46,7 @@ def classifier(df):
 
 
 # Load the dataset into a pandas DataFrame
-df = pd.read_excel("C:\\Users\\YashaswiniManyam\\Machine Leaning\\Lab Session1 Data.xlsx")
+df = pd.read_excel("C:\Users\prane\Desktop\Lab Session1 Data (1).xlsx")
 
 # Create the 'Category' column based on the payment amount
 df['Category'] = df['Payment (Rs)'].apply(lambda x: 'RICH' if x > 200 else 'POOR')
@@ -64,7 +64,7 @@ import pandas as pd
 import statistics
 import matplotlib.pyplot as plt
 
-excel_file_path = 'Lab Session1 Data.xlsx'
+excel_file_path = '"C:\Users\prane\Desktop\Lab Session1 Data (1).xlsx"
 df = pd.read_excel(excel_file_path, sheet_name='IRCTC Stock Price')
 
 price_mean = statistics.mean(df['Price'])
